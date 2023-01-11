@@ -5,7 +5,7 @@ internal class Program
     private static void Main(string[] args)
     {
         string myName, myLocation;
-        Console.WriteLine("Enter  your first name: ");
+        Console.WriteLine("Enter your first name: ");
         myName = Console.ReadLine();
         Console.WriteLine("Enter your location: ");
         myLocation = Console.ReadLine();
