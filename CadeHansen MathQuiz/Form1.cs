@@ -86,7 +86,7 @@ namespace CadeHansen_MathQuiz_11Jan2023
             quotient.Value = 0;
 
             // Start the timer.
-            timeLeft = 10;
+            timeLeft = 30;
             timeLabel.Text = "30 seconds";
             timer1.Start();
         }
