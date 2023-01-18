@@ -44,7 +44,7 @@
             // nameTextBox
             // 
             this.nameTextBox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nameTextBox.Location = new System.Drawing.Point(203, 27);
+            this.nameTextBox.Location = new System.Drawing.Point(228, 27);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(300, 32);
             this.nameTextBox.TabIndex = 0;
@@ -73,7 +73,7 @@
             // deskWidthBox
             // 
             this.deskWidthBox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.deskWidthBox.Location = new System.Drawing.Point(203, 84);
+            this.deskWidthBox.Location = new System.Drawing.Point(228, 84);
             this.deskWidthBox.Name = "deskWidthBox";
             this.deskWidthBox.Size = new System.Drawing.Size(300, 32);
             this.deskWidthBox.TabIndex = 3;
@@ -101,7 +101,7 @@
             // deskDepthBox
             // 
             this.deskDepthBox.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.deskDepthBox.Location = new System.Drawing.Point(203, 142);
+            this.deskDepthBox.Location = new System.Drawing.Point(228, 142);
             this.deskDepthBox.Name = "deskDepthBox";
             this.deskDepthBox.Size = new System.Drawing.Size(300, 32);
             this.deskDepthBox.TabIndex = 7;
@@ -121,15 +121,20 @@
             this.rushLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.rushLabel.Location = new System.Drawing.Point(12, 319);
             this.rushLabel.Name = "rushLabel";
-            this.rushLabel.Size = new System.Drawing.Size(126, 23);
+            this.rushLabel.Size = new System.Drawing.Size(210, 23);
             this.rushLabel.TabIndex = 9;
-            this.rushLabel.Text = "Rush Order:";
+            this.rushLabel.Text = "Order Processing Time:";
             this.rushLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // drawersNumericUpDown
             // 
             this.drawersNumericUpDown.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.drawersNumericUpDown.Location = new System.Drawing.Point(203, 205);
+            this.drawersNumericUpDown.Location = new System.Drawing.Point(228, 205);
+            this.drawersNumericUpDown.Maximum = new decimal(new int[] {
+            7,
+            0,
+            0,
+            0});
             this.drawersNumericUpDown.Name = "drawersNumericUpDown";
             this.drawersNumericUpDown.Size = new System.Drawing.Size(300, 32);
             this.drawersNumericUpDown.TabIndex = 12;
@@ -168,7 +173,7 @@
             "Rosewood",
             "Veneer",
             "Pine"});
-            this.materialComboBox.Location = new System.Drawing.Point(203, 262);
+            this.materialComboBox.Location = new System.Drawing.Point(228, 262);
             this.materialComboBox.Name = "materialComboBox";
             this.materialComboBox.Size = new System.Drawing.Size(300, 33);
             this.materialComboBox.TabIndex = 15;
@@ -182,7 +187,7 @@
             "Rush 7 days",
             "Rush 5 days",
             "Rush 3 days"});
-            this.rushComboBox.Location = new System.Drawing.Point(203, 315);
+            this.rushComboBox.Location = new System.Drawing.Point(228, 315);
             this.rushComboBox.MaxDropDownItems = 4;
             this.rushComboBox.Name = "rushComboBox";
             this.rushComboBox.Size = new System.Drawing.Size(300, 33);
@@ -190,7 +195,7 @@
             // 
             // AddQuote
             // 
-            this.ClientSize = new System.Drawing.Size(520, 439);
+            this.ClientSize = new System.Drawing.Size(587, 439);
             this.Controls.Add(this.rushComboBox);
             this.Controls.Add(this.materialComboBox);
             this.Controls.Add(this.closeButton);
