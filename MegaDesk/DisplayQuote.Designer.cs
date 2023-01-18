@@ -45,6 +45,21 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.customerName = new System.Windows.Forms.Label();
+            this.basePrice = new System.Windows.Forms.Label();
+            this.baseSize = new System.Windows.Forms.Label();
+            this.costPerIn = new System.Windows.Forms.Label();
+            this.deskWidth = new System.Windows.Forms.Label();
+            this.deskDepth = new System.Windows.Forms.Label();
+            this.totalSize = new System.Windows.Forms.Label();
+            this.totalCost = new System.Windows.Forms.Label();
+            this.drawersNum = new System.Windows.Forms.Label();
+            this.perDrawersCost = new System.Windows.Forms.Label();
+            this.drawerCost = new System.Windows.Forms.Label();
+            this.deskMaterial = new System.Windows.Forms.Label();
+            this.materialCost = new System.Windows.Forms.Label();
+            this.shippingTime = new System.Windows.Forms.Label();
+            this.shippingCost = new System.Windows.Forms.Label();
+            this.total = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -209,16 +224,173 @@
             // 
             // customerName
             // 
-            this.customerName.Location = new System.Drawing.Point(175, 12);
+            this.customerName.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.customerName.Location = new System.Drawing.Point(200, 12);
             this.customerName.Name = "customerName";
             this.customerName.Size = new System.Drawing.Size(200, 20);
             this.customerName.TabIndex = 21;
+            this.customerName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.customerName.Click += new System.EventHandler(this.customerName_Click);
+            // 
+            // basePrice
+            // 
+            this.basePrice.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.basePrice.Location = new System.Drawing.Point(200, 58);
+            this.basePrice.Name = "basePrice";
+            this.basePrice.Size = new System.Drawing.Size(200, 20);
+            this.basePrice.TabIndex = 22;
+            this.basePrice.Text = "200";
+            this.basePrice.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // baseSize
+            // 
+            this.baseSize.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.baseSize.Location = new System.Drawing.Point(200, 106);
+            this.baseSize.Name = "baseSize";
+            this.baseSize.Size = new System.Drawing.Size(200, 20);
+            this.baseSize.TabIndex = 23;
+            this.baseSize.Text = "1000";
+            this.baseSize.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // costPerIn
+            // 
+            this.costPerIn.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.costPerIn.Location = new System.Drawing.Point(200, 151);
+            this.costPerIn.Name = "costPerIn";
+            this.costPerIn.Size = new System.Drawing.Size(200, 20);
+            this.costPerIn.TabIndex = 24;
+            this.costPerIn.Text = "1";
+            this.costPerIn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // deskWidth
+            // 
+            this.deskWidth.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.deskWidth.Location = new System.Drawing.Point(200, 200);
+            this.deskWidth.Name = "deskWidth";
+            this.deskWidth.Size = new System.Drawing.Size(200, 20);
+            this.deskWidth.TabIndex = 25;
+            this.deskWidth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // deskDepth
+            // 
+            this.deskDepth.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.deskDepth.Location = new System.Drawing.Point(200, 253);
+            this.deskDepth.Name = "deskDepth";
+            this.deskDepth.Size = new System.Drawing.Size(200, 20);
+            this.deskDepth.TabIndex = 26;
+            this.deskDepth.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // totalSize
+            // 
+            this.totalSize.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.totalSize.Location = new System.Drawing.Point(200, 307);
+            this.totalSize.Name = "totalSize";
+            this.totalSize.Size = new System.Drawing.Size(200, 20);
+            this.totalSize.TabIndex = 27;
+            this.totalSize.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // totalCost
+            // 
+            this.totalCost.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.totalCost.Location = new System.Drawing.Point(200, 358);
+            this.totalCost.Name = "totalCost";
+            this.totalCost.Size = new System.Drawing.Size(200, 20);
+            this.totalCost.TabIndex = 28;
+            this.totalCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // drawersNum
+            // 
+            this.drawersNum.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.drawersNum.Location = new System.Drawing.Point(200, 403);
+            this.drawersNum.Name = "drawersNum";
+            this.drawersNum.Size = new System.Drawing.Size(200, 20);
+            this.drawersNum.TabIndex = 29;
+            this.drawersNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // perDrawersCost
+            // 
+            this.perDrawersCost.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.perDrawersCost.Location = new System.Drawing.Point(200, 447);
+            this.perDrawersCost.Name = "perDrawersCost";
+            this.perDrawersCost.Size = new System.Drawing.Size(200, 20);
+            this.perDrawersCost.TabIndex = 30;
+            this.perDrawersCost.Text = "50";
+            this.perDrawersCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // drawerCost
+            // 
+            this.drawerCost.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.drawerCost.Location = new System.Drawing.Point(200, 496);
+            this.drawerCost.Name = "drawerCost";
+            this.drawerCost.Size = new System.Drawing.Size(200, 20);
+            this.drawerCost.TabIndex = 31;
+            this.drawerCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // deskMaterial
+            // 
+            this.deskMaterial.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.deskMaterial.Location = new System.Drawing.Point(638, 8);
+            this.deskMaterial.Name = "deskMaterial";
+            this.deskMaterial.Size = new System.Drawing.Size(150, 20);
+            this.deskMaterial.TabIndex = 32;
+            this.deskMaterial.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // materialCost
+            // 
+            this.materialCost.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.materialCost.Location = new System.Drawing.Point(638, 58);
+            this.materialCost.Name = "materialCost";
+            this.materialCost.Size = new System.Drawing.Size(150, 20);
+            this.materialCost.TabIndex = 33;
+            this.materialCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // shippingTime
+            // 
+            this.shippingTime.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.shippingTime.Location = new System.Drawing.Point(638, 106);
+            this.shippingTime.Name = "shippingTime";
+            this.shippingTime.Size = new System.Drawing.Size(150, 20);
+            this.shippingTime.TabIndex = 34;
+            this.shippingTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // shippingCost
+            // 
+            this.shippingCost.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.shippingCost.Location = new System.Drawing.Point(638, 151);
+            this.shippingCost.Name = "shippingCost";
+            this.shippingCost.Size = new System.Drawing.Size(150, 20);
+            this.shippingCost.TabIndex = 35;
+            this.shippingCost.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // total
+            // 
+            this.total.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.total.Location = new System.Drawing.Point(638, 200);
+            this.total.Name = "total";
+            this.total.Size = new System.Drawing.Size(150, 20);
+            this.total.TabIndex = 36;
+            this.total.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // DisplayQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 528);
+            this.Controls.Add(this.total);
+            this.Controls.Add(this.shippingCost);
+            this.Controls.Add(this.shippingTime);
+            this.Controls.Add(this.materialCost);
+            this.Controls.Add(this.deskMaterial);
+            this.Controls.Add(this.drawerCost);
+            this.Controls.Add(this.perDrawersCost);
+            this.Controls.Add(this.drawersNum);
+            this.Controls.Add(this.totalCost);
+            this.Controls.Add(this.totalSize);
+            this.Controls.Add(this.deskDepth);
+            this.Controls.Add(this.deskWidth);
+            this.Controls.Add(this.costPerIn);
+            this.Controls.Add(this.baseSize);
+            this.Controls.Add(this.basePrice);
             this.Controls.Add(this.customerName);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -261,5 +433,20 @@
         private Label label9;
         private Label label10;
         private Label customerName;
+        private Label basePrice;
+        private Label baseSize;
+        private Label costPerIn;
+        private Label deskWidth;
+        private Label deskDepth;
+        private Label totalSize;
+        private Label totalCost;
+        private Label drawersNum;
+        private Label perDrawersCost;
+        private Label drawerCost;
+        private Label deskMaterial;
+        private Label materialCost;
+        private Label shippingTime;
+        private Label shippingCost;
+        private Label total;
     }
 }

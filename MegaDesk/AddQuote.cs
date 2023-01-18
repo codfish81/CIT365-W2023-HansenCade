@@ -77,6 +77,7 @@
             this.deskWidthBox.Name = "deskWidthBox";
             this.deskWidthBox.Size = new System.Drawing.Size(300, 32);
             this.deskWidthBox.TabIndex = 3;
+            this.deskWidthBox.TextChanged += new System.EventHandler(this.deskWidthBox_TextChanged);
             // 
             // depthLabel
             // 
@@ -220,7 +221,12 @@
 
         private void nameTextBox_TextChanged(object sender, EventArgs e)
         {
+            string name = Console.ReadLine();
+        }
 
+        private void deskWidthBox_TextChanged(object sender, EventArgs e)
+        {
+            string width = Console.ReadLine();
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -231,10 +237,14 @@
 
         private void getQuoteButton_Click(object sender, EventArgs e)
         {
-            DisplayQuote openDisplayQuote = new DisplayQuote();
+            
+            
+            DisplayQuote openDisplayQuote = new DisplayQuote(nameTextBox.Text);
             openDisplayQuote.Tag = this;
             openDisplayQuote.Show(this);
             Hide();
         }
+
+        
     }
 }
