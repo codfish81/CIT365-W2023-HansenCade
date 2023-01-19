@@ -230,7 +230,6 @@
             this.customerName.Size = new System.Drawing.Size(200, 20);
             this.customerName.TabIndex = 21;
             this.customerName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.customerName.Click += new System.EventHandler(this.customerName_Click);
             // 
             // basePrice
             // 

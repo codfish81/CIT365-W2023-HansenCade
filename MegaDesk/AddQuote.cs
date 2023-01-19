@@ -106,6 +106,7 @@
             this.deskDepthBox.Name = "deskDepthBox";
             this.deskDepthBox.Size = new System.Drawing.Size(300, 32);
             this.deskDepthBox.TabIndex = 7;
+            this.deskDepthBox.TextChanged += new System.EventHandler(this.deskDepthBox_TextChanged);
             // 
             // surfaceLabel
             // 
@@ -139,6 +140,7 @@
             this.drawersNumericUpDown.Name = "drawersNumericUpDown";
             this.drawersNumericUpDown.Size = new System.Drawing.Size(300, 32);
             this.drawersNumericUpDown.TabIndex = 12;
+            this.drawersNumericUpDown.ValueChanged += new System.EventHandler(this.drawersNumericUpDown_ValueChanged);
             // 
             // getQuoteButton
             // 
@@ -178,6 +180,7 @@
             this.materialComboBox.Name = "materialComboBox";
             this.materialComboBox.Size = new System.Drawing.Size(300, 33);
             this.materialComboBox.TabIndex = 15;
+            this.materialComboBox.SelectedIndexChanged += new System.EventHandler(this.materialComboBox_SelectedIndexChanged);
             // 
             // rushComboBox
             // 
@@ -193,6 +196,7 @@
             this.rushComboBox.Name = "rushComboBox";
             this.rushComboBox.Size = new System.Drawing.Size(300, 33);
             this.rushComboBox.TabIndex = 16;
+            this.rushComboBox.SelectedIndexChanged += new System.EventHandler(this.rushComboBox_SelectedIndexChanged);
             // 
             // AddQuote
             // 
@@ -239,12 +243,30 @@
         {
             
             
-            DisplayQuote openDisplayQuote = new DisplayQuote(nameTextBox.Text);
+            DisplayQuote openDisplayQuote = new DisplayQuote(nameTextBox.Text, deskWidthBox.Text, deskDepthBox.Text, drawersNumericUpDown.Text, materialComboBox.Text, rushComboBox.Text);
             openDisplayQuote.Tag = this;
             openDisplayQuote.Show(this);
             Hide();
         }
 
-        
+        private void deskDepthBox_TextChanged(object sender, EventArgs e)
+        {
+            string depth = Console.ReadLine();
+        }
+
+        private void drawersNumericUpDown_ValueChanged(object sender, EventArgs e)
+        {
+            string drawers = Console.ReadLine();
+        }
+
+        private void materialComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string material = Console.ReadLine();
+        }
+
+        private void rushComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string shipping = Console.ReadLine();
+        }
     }
 }
