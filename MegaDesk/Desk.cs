@@ -25,12 +25,12 @@ namespace MegaDesk
         }
         
 
-        int Width { get => width; set => width = value; }
-        int Depth { get => depth; set => depth = value; }
-        int Drawers { get => drawers; set => drawers = value; }
-        string Material { get => material;set => material = value; }
+        public int Width { get => width; set => width = value; }
+        public int Depth { get => depth; set => depth = value; }
+        public int Drawers { get => drawers; set => drawers = value; }
+        public string Material { get => material;set => material = value; }
     }
-    enum Material
+    public enum Material
     {
         Laminate,
         Oak,
@@ -39,7 +39,7 @@ namespace MegaDesk
         Pine
     }
 
-    enum Drawers
+    public enum Drawers
         {
             zero = 0, 
             one = 1,
