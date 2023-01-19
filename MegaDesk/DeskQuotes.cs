@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace MegaDesk
 {
-    internal class DeskQuotes
+    public class DeskQuotes
     {
+        string customerName;
+        string quoteDate;
+        Desk desk;
+        int totalPrice;
+        string shipping;
+        public DeskQuotes()
+        {
+        }
     }
 }
