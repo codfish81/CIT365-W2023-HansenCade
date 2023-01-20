@@ -8,11 +8,12 @@ namespace MegaDesk
 {
     public class DeskQuotes
     {
-        string customerName;
+        //public AddQuote addQuote;
+        private string customerName;
         string quoteDate;
         Desk desk;
         int totalPrice;
-        string shipping;
+        //string shipping;
         public DeskQuotes(string customerName, int width, int depth, int drawers, string material)
         {
             this.customerName = customerName;

@@ -12,15 +12,15 @@ namespace MegaDesk
 {
     public partial class DisplayQuote : Form
     {
-        public DisplayQuote(string nameLabel, string widthLabel, string depthLabel, string drawersLabel, string materialLabel, string shippingLabel)
+        public DisplayQuote(DeskQuotes deskQuote)
         {
             InitializeComponent();
-            customerName.Text = nameLabel;
-            deskWidth.Text = widthLabel;
-            deskDepth.Text = depthLabel;
-            drawersNum.Text = drawersLabel;
-            deskMaterial.Text = materialLabel;
-            shippingTime.Text = shippingLabel;
+            customerName.Text = deskQuote.CustomerName;
+            deskWidth.Text = Convert.ToString(deskQuote.Width);
+            deskDepth.Text = Convert.ToString(deskQuote.Depth);
+            drawersNum.Text = Convert.ToString(deskQuote.Drawers);
+            deskMaterial.Text = deskQuote.Material;
+            //shippingTime.Text = shippingLabel;
         }
     }
 }

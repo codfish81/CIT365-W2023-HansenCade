@@ -17,6 +17,12 @@
         private ComboBox rushComboBox;
         private TextBox deskDepthBox;
 
+        public string customerName;
+        public int width;
+        public int depth;
+        public int drawers;
+        public string material;
+
         public AddQuote()
         {
             InitializeComponent();
@@ -241,9 +247,9 @@
 
         private void getQuoteButton_Click(object sender, EventArgs e)
         {
-            
-            
-            DisplayQuote openDisplayQuote = new DisplayQuote(nameTextBox.Text, deskWidthBox.Text, deskDepthBox.Text, drawersNumericUpDown.Text, materialComboBox.Text, rushComboBox.Text);
+
+            DeskQuotes deskQuote = new DeskQuotes(customerName, width, depth, drawers, material);
+            DisplayQuote openDisplayQuote = new DisplayQuote(deskQuote);
             openDisplayQuote.Tag = this;
             openDisplayQuote.Show(this);
             Hide();
@@ -268,5 +274,7 @@
         {
             string shipping = Console.ReadLine();
         }
+
+        
     }
 }
