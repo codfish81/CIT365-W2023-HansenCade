@@ -38,7 +38,7 @@ namespace MegaDesk
 
         private void exit_Click(object sender, EventArgs e)
         {
-            Close();
+            //Close();
             Application.Exit();
         }
     }

@@ -22,5 +22,10 @@ namespace MegaDesk
             deskMaterial.Text = deskQuote.Material;
             //shippingTime.Text = shippingLabel;
         }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

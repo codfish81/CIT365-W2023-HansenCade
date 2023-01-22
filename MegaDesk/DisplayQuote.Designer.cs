@@ -60,6 +60,7 @@
             this.shippingTime = new System.Windows.Forms.Label();
             this.shippingCost = new System.Windows.Forms.Label();
             this.total = new System.Windows.Forms.Label();
+            this.closeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -370,11 +371,23 @@
             this.total.TabIndex = 36;
             this.total.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // closeButton
+            // 
+            this.closeButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.closeButton.Location = new System.Drawing.Point(544, 465);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(225, 33);
+            this.closeButton.TabIndex = 37;
+            this.closeButton.Text = "Close";
+            this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            // 
             // DisplayQuote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 528);
+            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.total);
             this.Controls.Add(this.shippingCost);
             this.Controls.Add(this.shippingTime);
@@ -447,5 +460,6 @@
         private Label shippingTime;
         private Label shippingCost;
         private Label total;
+        private Button closeButton;
     }
 }
