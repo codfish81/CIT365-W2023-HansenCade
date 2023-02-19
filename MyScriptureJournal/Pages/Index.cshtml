@@ -1,0 +1,48 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">My Scripture Journal</h1>
+    <p>"And we talk of Christ, we rejoice in Christ, we preach of Christ,<br>
+        we prophesy of Christ, and we write according to our prophecies,<br>
+        that our children may know to what source they may look for a<br>
+        remission of their sins."<a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng"> ~2 Nephi 25: 26</a>.</p>
+</div>
+
+<div id="carouselHomePage" class="carousel slide" data-bs-ride="carousel" style="position:relative;z-index:auto;">
+
+    <ol class="carousel-indicators" style="z-index:1 !important">
+        <li data-bs-target="#carouselHomePage" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselHomePage" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselHomePage" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselHomePage" data-bs-slide-to="3"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <img src="~/images/living_water_jesus_christ.jpeg" alt = "Christ is the living water" style = "width:100%">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/jesus_walking_on_water.jpeg" alt="Christ walking on water" style="width:100%">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/jesus_tomb.jpeg" alt="Christ is risen" style="width:100%">
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/christ_teaching_nephites.jpeg" alt="Christ appering to the Nephites" style="width:100%">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#carouselHomePage" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#carouselHomePage" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+    </a>
+</div>
